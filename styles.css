@@ -9,7 +9,7 @@
   --max-width: 1100px;
   --border-radius: 18px;
   --shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.6);
-  --font-family: 'Poppins', 'Segoe UI', sans-serif;
+  --font-family: 'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif;
 }
 
 * {
@@ -140,6 +140,11 @@ main {
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, border 0.25s ease;
 }
 
+.button-small {
+  padding: 0.55rem 1.2rem;
+  font-size: 0.9rem;
+}
+
 .button-primary {
   background: var(--accent);
   color: #0f172a;
@@ -223,6 +228,10 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
 .card {
   background: var(--card-bg);
   border-radius: var(--border-radius);
@@ -246,6 +255,26 @@ main {
 .card p {
   color: var(--text-secondary);
   line-height: 1.6;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.section-divider {
+  margin: 2.5rem 0 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.section-kicker {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-secondary);
 }
 
 .timeline {
